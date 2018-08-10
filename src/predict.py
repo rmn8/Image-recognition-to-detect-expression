@@ -78,15 +78,3 @@ pred = lb.inverse_transform(pred)
 test_set['Class'] = pred
 test_set.to_csv('../data/pred.csv', index=False)
 
-
-"""
-i = random.choice(train_set.index)
-img_name = train_set.path[i]
-
-img = imread(img_name)
-pred = model.predict_classes(train_x)
-print('Original:', train_set.Expression[i], 'Predicted:', lb.inverse_transform(pred[i]))
-
-plt.imshow(imresize(img, (128, 128)))
-plt.show()
-"""

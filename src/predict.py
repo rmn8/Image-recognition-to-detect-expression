@@ -20,8 +20,6 @@ total=np.sum(train_count)
 for i in range(0,len(train_count)):
 	cl_weight[i]=math.log1p(15*total/float(train_count[i]))
 cl_weight[7]=3.
-print train_count
-print cl_weight
 temp=[]
 
 for img_path in train_set.path:

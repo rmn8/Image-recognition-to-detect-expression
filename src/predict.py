@@ -11,8 +11,8 @@ from keras.models import Sequential
 from keras.layers import Dense, Flatten, InputLayer,Dropout
 from keras.models import load_model,model_from_yaml
 import math
-train_set = pd.read_csv('/home/ram/Desktop/Image_rec/data/train.txt')
-test_set = pd.read_csv('/home/ram/Desktop/Image_rec/data/test.txt')
+train_set = pd.read_csv('../data/train.txt')
+test_set = pd.read_csv('../data/test.txt')
 train_count=train_set['Expression'].value_counts()
 cl_weight={}
 total=np.sum(train_count)
